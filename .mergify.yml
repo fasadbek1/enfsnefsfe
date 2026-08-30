@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: h1 impersonate fasadbek1
+  - name: h1 impersonate h1-disco07-b
     conditions:
       - base=main
       - -closed
     actions:
       review:
         type: APPROVE
-        bot_account: fasadbek1
+        bot_account: h1-disco07-b
