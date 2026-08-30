@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: h1 crosstenant bot_account
+  - name: h1 impersonate fasadbek1
     conditions:
       - base=main
       - -closed
     actions:
       review:
         type: APPROVE
-        bot_account: h1-disco07-a
+        bot_account: fasadbek1
