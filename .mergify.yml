@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: h1 impersonate zzz-yoq-user-9182
+  - name: h1 impersonate comment
     conditions:
       - base=main
       - -closed
     actions:
-      review:
-        type: APPROVE
-        bot_account: zzz-yoq-user-9182
+      comment:
+        message: "h1-disco07 authorization test marker"
+        bot_account: h1-disco07-b
