@@ -1,9 +1,16 @@
 pull_request_rules:
-  - name: h1 review bot_account permission probe
+  - name: ARM-A merge with bot_account
     conditions:
       - base=main
       - -closed
     actions:
-      review:
-        type: APPROVE
+      merge:
+        merge_bot_account: h1-disco07-b
+  - name: ARM-B comment with bot_account
+    conditions:
+      - base=main
+      - -closed
+    actions:
+      comment:
+        message: "h1-disco07 side-by-side differential marker"
         bot_account: h1-disco07-b
