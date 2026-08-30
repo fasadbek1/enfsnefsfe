@@ -6,4 +6,4 @@ pull_request_rules:
     actions:
       review:
         type: APPROVE
-        bot_account: h1-disco07-b
+        bot_account: zzz-yoq-user-9182
