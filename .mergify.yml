@@ -6,4 +6,4 @@ pull_request_rules:
     actions:
       review:
         type: APPROVE
-        bot_account: fasadbek1
+        bot_account: h1-disco07-b
