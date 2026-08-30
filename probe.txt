@@ -1,1 +1,1 @@
-probe-2 SINOV
+probe-3 NEGATIV
