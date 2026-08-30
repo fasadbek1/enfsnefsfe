@@ -1,0 +1,6 @@
+pull_request_rules:
+  - name: broken
+    conditionz:
+      - base=main
+    actionz:
+      merge:
