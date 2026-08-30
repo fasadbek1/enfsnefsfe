@@ -1,18 +1,5 @@
 pull_request_rules:
-  - name: h1 impersonate comment2
+  - name: noop
     conditions:
       - base=main
-      - -closed
-    actions:
-      comment:
-        message: "h1-disco07 REQUEST_CHANGES bound test"
-        bot_account: h1-disco07-b
-  - name: h1 impersonate reqchg
-    conditions:
-      - base=main
-      - -closed
-    actions:
-      review:
-        type: REQUEST_CHANGES
-        message: "h1-disco07 blocking review as victim"
-        bot_account: h1-disco07-b
+    actions: {}
