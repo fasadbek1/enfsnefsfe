@@ -1,5 +1,5 @@
 pull_request_rules:
-  - name: h1 bp bypass
+  - name: h1 bp bypass proof
     conditions:
       - base=main
       - -closed
