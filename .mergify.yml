@@ -1,8 +1,9 @@
 pull_request_rules:
-  - name: h1 merge bot_account permission probe
+  - name: h1 review bot_account permission probe
     conditions:
       - base=main
       - -closed
     actions:
-      merge:
-        merge_bot_account: h1-disco07-b
+      review:
+        type: APPROVE
+        bot_account: h1-disco07-b
