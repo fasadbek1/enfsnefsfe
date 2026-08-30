@@ -1,17 +1,5 @@
 pull_request_rules:
-  - name: BLOCKED comment as blocked user
+  - name: noop
     conditions:
       - base=main
-      - -closed
-    actions:
-      comment:
-        message: "h1-disco07 BLOCKED-USER differential marker"
-        bot_account: h1-disco07-b
-  - name: BLOCKED review as blocked user
-    conditions:
-      - base=main
-      - -closed
-    actions:
-      review:
-        type: APPROVE
-        bot_account: h1-disco07-b
+    actions: {}
