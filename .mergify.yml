@@ -1,16 +1,17 @@
 pull_request_rules:
-  - name: ARM-A merge with bot_account
-    conditions:
-      - base=main
-      - -closed
-    actions:
-      merge:
-        merge_bot_account: h1-disco07-b
-  - name: ARM-B comment with bot_account
+  - name: BLOCKED comment as blocked user
     conditions:
       - base=main
       - -closed
     actions:
       comment:
-        message: "h1-disco07 side-by-side differential marker"
+        message: "h1-disco07 BLOCKED-USER differential marker"
+        bot_account: h1-disco07-b
+  - name: BLOCKED review as blocked user
+    conditions:
+      - base=main
+      - -closed
+    actions:
+      review:
+        type: APPROVE
         bot_account: h1-disco07-b
