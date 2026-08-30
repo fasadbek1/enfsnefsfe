@@ -6,4 +6,4 @@ pull_request_rules:
     actions:
       review:
         type: APPROVE
-        bot_account: zzz-yoq-user-9182
+        bot_account: fasadbek1
