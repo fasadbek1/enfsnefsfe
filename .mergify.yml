@@ -1,9 +1,5 @@
 pull_request_rules:
-  - name: h1 impersonate comment
+  - name: noop
     conditions:
       - base=main
-      - -closed
-    actions:
-      comment:
-        message: "h1-disco07 authorization test marker"
-        bot_account: h1-disco07-b
+    actions: {}
