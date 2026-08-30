@@ -1,9 +1,5 @@
 pull_request_rules:
-  - name: h1 bot_account probe
+  - name: noop
     conditions:
       - base=main
-      - -closed
-    actions:
-      review:
-        type: APPROVE
-        bot_account: zzz-mavjud-emas-user-9182
+    actions: {}
